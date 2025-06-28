@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef5ff;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(179, 53, 53, 0.1);
+  max-width: 900px;
+  width: 100%;
+}
+
+.sidebar {
+  background: linear-gradient(#483EFF, #483EFF);
+  color: white;
+  width: 250px;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.circle {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 31px;
+  text-align: center;
+}
+
+.step.active .circle {
+  background: white;
+  color: #483EFF;
+}
+
+.step .text {
+  margin-left: 15px;
+  font-size: 12px;
+}
+
+.step .text h4 {
+  margin: 0;
+}
+
+.illustration {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 80%;
+  height: 100px;
+  background: url('https://via.placeholder.com/200x100') no-repeat center center;
+  background-size: contain;
+}
+
+.form-area {
+  flex: 1;
+  padding: 50px;
+}
+
+.form-area h1 {
+  color: #02295A;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 30px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #02295A;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #02295A;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}

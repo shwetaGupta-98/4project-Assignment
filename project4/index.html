@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multi-Step Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="step active">
+        <div class="circle">1</div>
+        <div class="text">
+          <p>STEP 1</p>
+          <h4>YOUR INFO</h4>
+        </div>
+      </div>
+      <div class="step">
+        <div class="circle">2</div>
+        <div class="text">
+          <p>STEP 2</p>
+          <h4>SELECT PLAN</h4>
+        </div>
+      </div>
+      <div class="step">
+        <div class="circle">3</div>
+        <div class="text">
+          <p>STEP 3</p>
+          <h4>ADD-ONS</h4>
+        </div>
+      </div>
+      <div class="step">
+        <div class="circle">4</div>
+        <div class="text">
+          <p>STEP 4</p>
+          <h4>SUMMARY</h4>
+        </div>
+      </div>
+      <div class="illustration"></div>
+    </div>
+
+    <div class="form-area">
+      <h1>Personal info</h1>
+      <p class="subtitle">Please provide your name, email address, and phone number.</p>
+      <form id="multiStepForm">
+        <label>Name</label>
+        <input type="text" placeholder="e.g. RadhaRani" required />
+        <label>Email Address</label>
+        <input type="email" placeholder="e.g. prodeskIT80.com" required />
+        <label>Phone Number</label>
+        <input type="tel" placeholder="e.g. +91 8348999047" required />
+        <button type="button" id="nextBtn">Next Step</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
